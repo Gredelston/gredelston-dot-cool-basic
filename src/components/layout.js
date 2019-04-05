@@ -1,15 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Sidebar from "./sidebar"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 import "../../static/global-css.css"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { children } = this.props
 
     return (
       <div id='layout'>
