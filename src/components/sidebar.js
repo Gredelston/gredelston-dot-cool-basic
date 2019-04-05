@@ -20,7 +20,21 @@ function Sidebar() {
         return (
           <div id="sidebar">
             <h1 id="sidebar-title">{title}</h1>
-            I am a sidebar
+            <Image
+              fixed={data.avatar.childImageSharp.fixed}
+              alt={author}
+              style={{
+                marginBottom: 0,
+                marginLeft: `auto`,
+                marginRight: `auto`,
+                minWidth: 50,
+                borderRadius: `100%`,
+                display: `block`
+              }}
+              imgStyle={{
+                borderRadius: `50%`,
+              }}
+            />
           </div>
         )
       }}
@@ -32,7 +46,7 @@ const sidebarQuery = graphql`
   query sidebarQuery {
     avatar: file(absolutePath: { regex: "/headshot.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 128, height: 128) {
           ...GatsbyImageSharpFixed
         }
       }
