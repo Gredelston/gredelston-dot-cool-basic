@@ -17,14 +17,16 @@ html {
     left: 0;
     overflow-x: hidden;
     background: teal;
+    padding: 48px 60px;
 }
 
 #sidebar-title {
     text-align: center;
-    margin: 80px 60px;
 }
 
 #main-content {
+    height: 100%;
+    padding: 48px 60px;
     margin-left: 405px;
     background: yellow;
 }
