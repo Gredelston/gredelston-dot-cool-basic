@@ -40,6 +40,9 @@ function Sidebar() {
               <strong id="sidebar-bio-name">{author}</strong><br />
               and this is my blog.
             </div>
+            <div id="sidebar-nav">
+              <a href="/about">About</a>
+            </div>
           </div>
         )
       }}
