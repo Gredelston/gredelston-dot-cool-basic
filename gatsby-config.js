@@ -10,6 +10,12 @@ module.exports = {
       github: `gredelston`,
       email: `gredelston@gmail.com`
     },
+    topNav: [
+      {
+        title: `About Me`,
+        path: `/about`,
+      }
+    ]
   },
   plugins: [
     {

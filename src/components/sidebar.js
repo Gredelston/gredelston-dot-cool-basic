@@ -9,14 +9,13 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import { rhythm } from "../utils/typography"
-
 function Sidebar() {
   return (
     <StaticQuery
       query={sidebarQuery}
       render={data => {
-        const { title, author, social } = data.site.siteMetadata
+        const { title, author, social, topNav } = data.site.siteMetadata
+        console.log(topNav)
         return (
           <div id="sidebar">
             <Link to="/">
@@ -43,7 +42,13 @@ function Sidebar() {
               and this is my blog.
             </div>
             <div id="sidebar-nav">
-              <Link to="/about">About</Link>
+              {
+                topNav.map(navLink =>
+                  <Link key={navLink.path} className="sidebar-nav-link" to={navLink.path}>
+                    {navLink.title}
+                  </Link>
+                )
+              }
             </div>
           </div>
         )
@@ -70,6 +75,10 @@ const sidebarQuery = graphql`
           github,
           linkedin,
           email
+        }
+        topNav {
+          title
+          path
         }
       }
     }
