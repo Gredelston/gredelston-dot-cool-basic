@@ -35,6 +35,10 @@ function Sidebar() {
                 borderRadius: `50%`,
               }}
             />
+            <div id="sidebar-bio" align="center">
+              <strong id="sidebar-bio-name">{author}</strong><br />
+              &rsquo;s blog.
+            </div>
           </div>
         )
       }}

@@ -3,6 +3,10 @@ html {
     width: 100%;
 }
 
+p {
+    margin: 0px;
+}
+
 #layout {
     height: 100%;
     width: 100%;
@@ -22,6 +26,15 @@ html {
 
 #sidebar-title {
     text-align: center;
+}
+
+#sidebar-bio {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+#sidebar-bio-name {
+    font-size: 36px;
 }
 
 #main-content {
