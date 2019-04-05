@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -19,7 +19,9 @@ function Sidebar() {
         const { title, author, social } = data.site.siteMetadata
         return (
           <div id="sidebar">
-            <h1 id="sidebar-title">{title}</h1>
+            <Link to="/">
+              <h1 id="sidebar-title">{title}</h1>
+            </Link>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -41,7 +43,7 @@ function Sidebar() {
               and this is my blog.
             </div>
             <div id="sidebar-nav">
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </div>
           </div>
         )
