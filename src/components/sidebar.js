@@ -36,8 +36,9 @@ function Sidebar() {
               }}
             />
             <div id="sidebar-bio" align="center">
+              My name is <br />
               <strong id="sidebar-bio-name">{author}</strong><br />
-              &rsquo;s blog.
+              and this is my blog.
             </div>
           </div>
         )
