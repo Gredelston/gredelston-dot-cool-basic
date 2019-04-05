@@ -19,6 +19,11 @@ html {
     background: teal;
 }
 
+#sidebar-title {
+    text-align: center;
+    margin: 80px 60px;
+}
+
 #main-content {
     margin-left: 405px;
     background: yellow;

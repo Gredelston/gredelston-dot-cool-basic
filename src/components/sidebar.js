@@ -16,9 +16,10 @@ function Sidebar() {
     <StaticQuery
       query={sidebarQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { title, author, social } = data.site.siteMetadata
         return (
           <div id="sidebar">
+            <h1 id="sidebar-title">{title}</h1>
             I am a sidebar
           </div>
         )
@@ -38,6 +39,7 @@ const sidebarQuery = graphql`
     }
     site {
       siteMetadata {
+        title
         author
         social {
           twitter,
