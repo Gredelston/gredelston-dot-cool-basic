@@ -7,15 +7,15 @@ module.exports = {
     social: [
       {
         label: "Twitter",
-        path: "www.twitter.com/gredelston"
+        path: "https://www.twitter.com/gredelston"
       },
       {
         label: "LinkedIn",
-        path: "www.linkedin.com/me/gregedelston"
+        path: "https://www.linkedin.com/in/gregedelston"
       },
       {
         label: "Github",
-        path: "www.github.com/gredelston"
+        path: "https://www.github.com/gredelston"
       },
       {
         label: "Email",
