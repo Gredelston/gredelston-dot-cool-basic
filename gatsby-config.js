@@ -6,6 +6,14 @@ module.exports = {
     siteUrl: `https://gredelston.cool`,
     social: [
       {
+        label: "Email",
+        path: "mailto:gredelston@gmail.com"
+      },
+      {
+        label: "Github",
+        path: "https://www.github.com/gredelston"
+      },
+      {
         label: "Twitter",
         path: "https://www.twitter.com/gredelston"
       },
@@ -13,14 +21,6 @@ module.exports = {
         label: "LinkedIn",
         path: "https://www.linkedin.com/in/gregedelston"
       },
-      {
-        label: "Github",
-        path: "https://www.github.com/gredelston"
-      },
-      {
-        label: "Email",
-        path: "mailto:gredelston@gmail.com"
-      }
     ],
     topNav: [
       {
