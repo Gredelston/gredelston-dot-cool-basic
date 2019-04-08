@@ -9,6 +9,10 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
+var icons = require("../../content/assets/social_icons/icons.js");
+
+var ICON_SIZE='48px'
+
 function Sidebar() {
   return (
     <StaticQuery
@@ -45,8 +49,15 @@ function Sidebar() {
             <ul id="sidebar-nav-links">
               {
                 topNav.map(navLink =>
-                  <li key={navLink.path + '-li'} className="sidebar-nav-link-container">
-                    <Link key={navLink.path + '-link'} className="sidebar-nav-link" to={navLink.path}>
+                  <li
+                    key={"navbar-" + navLink.label + "-li"}
+                    className="sidebar-nav-link-container"
+                  >
+                    <Link
+                      key={"navbar-" + navLink.path + "-link"}
+                      className="sidebar-nav-link"
+                      to={navLink.path}
+                    >
                       {navLink.label}
                     </Link>
                   </li>
@@ -58,8 +69,19 @@ function Sidebar() {
             <div id="sidebar-social-links">
               {
                 social.map(socialSite =>
-                    <a key={socialSite.label + '-a'} className="sidebar-social-link" href={socialSite.path}>
-                      {socialSite.label}
+                    <a
+                      key={"social-" + socialSite.label + "-a"}
+                      className="sidebar-social-a"
+                      href={socialSite.path}
+                     >
+                      <img
+                        src={icons[socialSite.label.toLowerCase()]}
+                        alt={socialSite.label.toLowerCase()}
+                        width={ICON_SIZE}
+                        height={ICON_SIZE}
+                        className={"sidebar-social-img"}
+                        key={"social-" + socialSite.label + "-img"}
+                      />
                     </a>
                 )
               }

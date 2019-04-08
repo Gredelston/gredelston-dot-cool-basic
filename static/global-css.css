@@ -38,6 +38,16 @@ p {
     font-size: 36px;
 }
 
+#sidebar ul {
+    list-style-type: none;
+}
+
+#sidebar-social-links a {
+    text-decoration: none;
+    box-shadow: none;
+    margin-right: 16px;
+}
+
 #main-content {
     padding: 48px 60px;
     margin-left: 405px;
