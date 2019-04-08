@@ -4,15 +4,27 @@ module.exports = {
     author: `Greg Edelston`,
     description: `Greg Edelston is a human with a website.`,
     siteUrl: `https://gredelston.cool`,
-    social: {
-      twitter: `gredelston`,
-      linkedin: `gregedelston`,
-      github: `gredelston`,
-      email: `gredelston@gmail.com`
-    },
+    social: [
+      {
+        label: "Twitter",
+        path: "www.twitter.com/gredelston"
+      },
+      {
+        label: "LinkedIn",
+        path: "www.linkedin.com/me/gregedelston"
+      },
+      {
+        label: "Github",
+        path: "www.github.com/gredelston"
+      },
+      {
+        label: "Email",
+        path: "mailto:gredelston@gmail.com"
+      }
+    ],
     topNav: [
       {
-        title: `About Me`,
+        label: `About Me`,
         path: `/about`,
       }
     ]

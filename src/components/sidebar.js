@@ -41,15 +41,32 @@ function Sidebar() {
               <strong id="sidebar-bio-name">{author}</strong><br />
               and this is my blog.
             </div>
-            <div id="sidebar-nav">
+
+            <h3>Pages</h3>
+            <ul id="sidebar-nav">
               {
                 topNav.map(navLink =>
-                  <Link key={navLink.path} className="sidebar-nav-link" to={navLink.path}>
-                    {navLink.title}
-                  </Link>
+                  <li class="sidebar-nav-link-container">
+                    <Link key={navLink.path} className="sidebar-nav-link" to={navLink.path}>
+                      {navLink.label}
+                    </Link>
+                  </li>
                 )
               }
-            </div>
+            </ul>
+
+            <h3>Social Links</h3>
+            <ul id="social-links">
+              {
+                social.map(socialSite =>
+                  <li class="sidebar-social-link-container">
+                    <Link key={socialSite.label} className="sidebar-social-link" to={socialSite.path}>
+                      {socialSite.label}
+                    </Link>
+                  </li>
+                )
+              }
+            </ul>
           </div>
         )
       }}
@@ -71,13 +88,11 @@ const sidebarQuery = graphql`
         title
         author
         social {
-          twitter,
-          github,
-          linkedin,
-          email
+          label,
+          path
         }
         topNav {
-          title
+          label
           path
         }
       }
