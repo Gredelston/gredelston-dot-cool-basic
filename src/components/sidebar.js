@@ -21,9 +21,16 @@ function Sidebar() {
         const { title, author, social, topNav } = data.site.siteMetadata
         return (
           <div id="sidebar">
+            {
+              // Site title
+            }
             <Link to="/">
               <h1 id="sidebar-title">{title}</h1>
             </Link>
+
+            {
+              // Profile pic
+            }
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -39,12 +46,19 @@ function Sidebar() {
                 borderRadius: `50%`,
               }}
             />
+
+            {
+              // Blurb
+            }
             <div id="sidebar-bio" align="center">
               My name is <br />
               <strong id="sidebar-bio-name">{author}</strong><br />
               and this is my blog.
             </div>
 
+            {
+              // Navbar
+            }
             <h3>Pages</h3>
             <ul id="sidebar-nav-links">
               {
@@ -65,7 +79,9 @@ function Sidebar() {
               }
             </ul>
 
-            <h3>Social Links</h3>
+            {
+              // Social links
+            }
             <div id="sidebar-social-links">
               {
                 social.map(socialSite =>
