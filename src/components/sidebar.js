@@ -15,7 +15,6 @@ function Sidebar() {
       query={sidebarQuery}
       render={data => {
         const { title, author, social, topNav } = data.site.siteMetadata
-        console.log(topNav)
         return (
           <div id="sidebar">
             <Link to="/">
@@ -43,11 +42,11 @@ function Sidebar() {
             </div>
 
             <h3>Pages</h3>
-            <ul id="sidebar-nav">
+            <ul id="sidebar-nav-links">
               {
                 topNav.map(navLink =>
-                  <li class="sidebar-nav-link-container">
-                    <Link key={navLink.path} className="sidebar-nav-link" to={navLink.path}>
+                  <li key={navLink.path + '-li'} className="sidebar-nav-link-container">
+                    <Link key={navLink.path + '-link'} className="sidebar-nav-link" to={navLink.path}>
                       {navLink.label}
                     </Link>
                   </li>
@@ -56,17 +55,15 @@ function Sidebar() {
             </ul>
 
             <h3>Social Links</h3>
-            <ul id="social-links">
+            <div id="sidebar-social-links">
               {
                 social.map(socialSite =>
-                  <li class="sidebar-social-link-container">
-                    <Link key={socialSite.label} className="sidebar-social-link" to={socialSite.path}>
+                    <a key={socialSite.label + '-a'} className="sidebar-social-link" href={socialSite.path}>
                       {socialSite.label}
-                    </Link>
-                  </li>
+                    </a>
                 )
               }
-            </ul>
+            </div>
           </div>
         )
       }}
