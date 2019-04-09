@@ -52,3 +52,7 @@ p {
     padding: 48px 60px;
     margin-left: 405px;
 }
+
+#main-content p {
+    margin-bottom: 2em;
+}
