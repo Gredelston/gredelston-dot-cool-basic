@@ -1,6 +1,6 @@
 ---
 title: Hello, World and Boston!
-date: "2019-01-19"
+date: "2019-01-17"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 ---
 Did you know that .cool is a valid TLD?
