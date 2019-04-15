@@ -1,7 +1,7 @@
 ---
 title: "Recapping Mystery Hunt 2019, Part 1: Story"
-date: "2019-01-22T23:59:59"
-description: "The story of a Great Molasses Flood, an associated holiday, and 159 puzzles."
+date: "2019-01-22T23:59:57"
+description: "The story of a Molasses Flood, an associated holiday, and 159 puzzles."
 tags: "puzzles"
 ---
 *This is a part of a series about MIT Mystery Hunt 2019. It is preceded by “[Puzzlehunts: An Overview](/puzzlehunts-an-overview),” and proceeded by “Part 2: Structure” and “Part 3: My Puzzles.”*
@@ -31,11 +31,11 @@ After [a rousing series of games](http://web.mit.edu/puzzle/www/2019/solution/yo
 The Fool delivers a heartfelt monologue in which they confess to stealing the manhole cover in order to incite fun and chaos in these boring woods. Cackling, they run back to April Fools Day Town. And you continue solving puzzles.
 
 ##Endgame
-After solving all fifteen inter-town problems and [discerning](http://web.mit.edu/puzzle/www/2019/solution/april_fools_day.html) that the April Fool intends to pull a “JEST IN THE TIME OF NICK,” your team begins a [final interaction](http://web.mit.edu/puzzle/www/2019/solution/molasses_awareness_day.html) with Jack Skellington, Santa Clause, and the April Fool.
+After solving all fifteen inter-town problems and [discerning](http://web.mit.edu/puzzle/www/2019/solution/april_fools_day.html) that the April Fool intends to pull a **JEST IN THE TIME OF NICK**, your team begins a [final interaction](http://web.mit.edu/puzzle/www/2019/solution/molasses_awareness_day.html) with Jack Skellington, Santa Clause, and the April Fool.
 
 The Fool announces their diabolical plan to replace the sugar in all of the Christmas Town cookies with molasses, giving them (the cookies) a slightly more robust flavor. Cruel indeed! Santa Claus helps the Fool realize that their pranks are killing people, which is bad. So they (the Fool) agree to help the team find the manhole cover.
 
-Your team solves one more puzzle in order to unlock a box supposedly containing the Fool’s notes about where they hid the manhole cover. You eventually decode the instruction USE A MISSILE TOE. You kick the box, which swings open, thanks to the magic of electronics. You peer inside to find that the box is… empty! *APRIL FOOLS!* Always a classic.
+Your team solves one more puzzle in order to unlock a box supposedly containing the Fool’s notes about where they hid the manhole cover. You eventually decode the instruction **USE A MISSILE TOE**. You kick the box, which swings open, thanks to the magic of electronics. You peer inside to find that the box is… empty! *APRIL FOOLS!* Always a classic.
 
 The Fool hands you their actual notes, kicking off the final runaround. Your team runs across MIT’s campus to the first five holiday towns. Eventually you find an instruction telling you to go to Your Birthday Town, accompanied by a photograph of your team’s headquarters. You run back to your HQ, where you find that the manhole cover. It was there the whole time!
 
