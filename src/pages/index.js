@@ -17,7 +17,12 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+          const title = node.frontmatter.title || node.fields.slug;
+          var tags = node.frontmatter.tags.split(",").map(i => i.trim());
+          console.log(tags);
+          if (tags.includes("hidden")) {
+            return;
+          }
           return (
             <div key={node.fields.slug}>
               <h3
@@ -63,6 +68,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             description
+            tags
           }
         }
       }
