@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
+import BlogrollEntry from "../components/blogroll-entry"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,30 +17,16 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          var tags = node.frontmatter.tags.split(",").map(i => i.trim());
-          console.log(tags);
-          if (tags.includes("hidden")) {
-            return;
-          }
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
+            <BlogrollEntry
+              title={node.frontmatter.title || node.fields.slug}
+              slug={node.fields.slug}
+              date={node.frontmatter.date}
+              description={node.frontmatter.description}
+              excerpt={node.excerpt}
+              tags={node.frontmatter.tags}
+              key={node.fields.slug}
+            />
           )
         })}
       </Layout>
