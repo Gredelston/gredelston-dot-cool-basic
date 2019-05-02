@@ -28,12 +28,16 @@ class BlogrollEntry extends React.Component {
           </h3>
           <p className="blogroll-entry-details">
             <span>{this.props.date}</span>
-            <span className="tags_separator">
-              &nbsp;&nbsp;&nbsp;&nbsp;&#9679;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
             {tags.map(({ tag }) => {
               return (
-                <b>{tag}</b>
+                <span className="blogroll-entry-tag-container" key={tag + "-"}>
+                  <span className="tags_separator">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&#9679;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </span>
+                  <b key={tag}>
+                    {tag}
+                  </b>
+                </span>
               )
             })}
             <span>{tags.join(", ")}</span>
