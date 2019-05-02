@@ -1,8 +1,6 @@
 /**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
+ * Blogroll entry component that lists a single post.
  *
- * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
 import React from "react"
