@@ -28,7 +28,18 @@ class BlogrollEntry extends React.Component {
               {this.props.title}
             </Link>
           </h3>
-          <small>{this.props.date}</small>
+          <p className="blogroll-entry-details">
+            <span>{this.props.date}</span>
+            <span className="tags_separator">
+              &nbsp;&nbsp;&nbsp;&nbsp;&#9679;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            {tags.map(({ tag }) => {
+              return (
+                <b>{tag}</b>
+              )
+            })}
+            <span>{tags.join(", ")}</span>
+          </p>
           <p
             dangerouslySetInnerHTML={{
               __html: this.props.description || this.props.excerpt,
