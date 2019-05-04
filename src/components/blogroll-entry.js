@@ -10,7 +10,13 @@ import { rhythm } from "../utils/typography"
 
 class BlogrollEntry extends React.Component {
   render () {
-    var tags = this.props.tags.split(",").map(i => i.trim());
+    var tags = this.props.tags;
+    const tags_separator = <span
+      style={{
+        marginLeft: '10px',
+        marginRight: '10px'
+      }}
+    >&#9679;</span>
     if (tags.includes("hidden")) {
       return null;
     }
@@ -28,19 +34,16 @@ class BlogrollEntry extends React.Component {
           </h3>
           <p className="blogroll-entry-details">
             <span>{this.props.date}</span>
-            {tags.map(({ tag }) => {
-              return (
-                <span className="blogroll-entry-tag-container" key={tag + "-"}>
-                  <span className="tags_separator">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&#9679;&nbsp;&nbsp;&nbsp;&nbsp;
-                  </span>
-                  <b key={tag}>
-                    {tag}
-                  </b>
-                </span>
-              )
-            })}
-            <span>{tags.join(", ")}</span>
+            <span className="blogroll-entry-tag-container">
+              {tags_separator}
+              {
+                tags.map(tag => {
+                  return (
+                    <b key={tag}>{tag}</b>
+                  )
+                }).reduce((prev, curr) => [prev, ",    ", curr])
+              }
+            </span>
           </p>
           <p
             dangerouslySetInnerHTML={{

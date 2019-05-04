@@ -2,7 +2,7 @@
 title: Hello, World and Boston!
 date: "2019-01-17"
 description: Wow, I bought a domain!
-tags: blog
+tags: ["blog"]
 ---
 Did you know that .cool is a valid TLD?
 
