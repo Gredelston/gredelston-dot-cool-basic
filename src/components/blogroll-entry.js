@@ -39,7 +39,11 @@ class BlogrollEntry extends React.Component {
               {
                 tags.map(tag => {
                   return (
-                    <b key={tag}>{tag}</b>
+                    <a href="/tags/{tag}" className="blogroll-entry-tag-link">
+                      <b key={tag}>
+                        {tag}
+                      </b>
+                    </a>
                   )
                 }).reduce((prev, curr) => [prev, ",    ", curr])
               }

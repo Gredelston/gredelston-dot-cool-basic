@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-    background: white;
+    background: #C1D2D6;
 }
 
 p {
@@ -20,7 +20,7 @@ p {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    background: brown;
+    background: #6A7D8E;
     padding: 48px 60px;
 }
 
@@ -63,4 +63,10 @@ p {
 
 .blogroll-entry-details {
     font-size: small;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #CA8F42;
 }
