@@ -39,7 +39,7 @@ class BlogrollEntry extends React.Component {
               {
                 tags.map(tag => {
                   return (
-                    <Link to="/tags/{tag}" className="blogroll-entry-tag-link">
+                    <Link to={`/tags/`.concat(tag)} className="blogroll-entry-tag-link">
                       <b key={tag}>
                         {tag}
                       </b>
