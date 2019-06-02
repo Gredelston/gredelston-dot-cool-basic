@@ -63,7 +63,10 @@ p {
 }
 
 #sidebar-nav-links {
-    display: block;
+    padding: 88px 0px;
+    clear: both;
+    float: none;
+    width: 100%;
 }
 
 .sidebar-nav-link-container {
@@ -75,4 +78,9 @@ p {
     margin-right: -60px;
     margin-left: 0px;
     padding: 16px 180px 16px 30px;
+}
+
+#sidebar-social-links {
+    padding-top: 72px;
+    clear: both;
 }

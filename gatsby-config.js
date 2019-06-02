@@ -24,6 +24,10 @@ module.exports = {
     ],
     topNav: [
       {
+        label: `Home`,
+        path: `/`,
+      },
+      {
         label: `About Me`,
         path: `/about`,
       }

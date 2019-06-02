@@ -58,7 +58,6 @@ function Sidebar() {
             {
               // Navbar
             }
-            <h3>Pages</h3>
             <ul id="sidebar-nav-links">
               {
                 topNav.map(navLink =>
@@ -77,7 +76,6 @@ function Sidebar() {
                 )
               }
             </ul>
-            <br /><br />
 
             {
               // Social links
