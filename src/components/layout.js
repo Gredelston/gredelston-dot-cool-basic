@@ -4,6 +4,7 @@ import Sidebar from "./sidebar"
 import { rhythm } from "../utils/typography"
 
 import "../../static/global-css.css"
+import "../../static/colors.css"
 
 class Layout extends React.Component {
   render() {
