@@ -1,8 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
+import BlogrollEntry from "../components/blogroll-entry"
+import Layout from "../components/layout"
 
 // Components
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 const Tags = ({ pageContext, data }) => {
   const { tag }  = pageContext;
@@ -12,28 +13,28 @@ const Tags = ({ pageContext, data }) => {
   } tagged with "${tag}"`
 
   return (
-    <div>
-      <h1>
-        {tagHeader}
-      </h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields;
-          const { title } = node.frontmatter;
-          return (
-            <BlogrollEntry
-              title={node.frontmatter.title || node.fields.slug}
-              slug={node.fields.slug}
-              date={node.frontmatter.date}
-              description={node.frontmatter.description}
-              excerpt={node.excerpt}
-              tags={node.frontmatter.tags}
-              key={node.fields.slug}
-            />
-          )
-        })}
-      </ul>
-    </div>
+    <Layout>
+      <div>
+        <h1>
+          {tagHeader}
+        </h1>
+        <ul>
+          {edges.map(({ node }) => {
+            return (
+              <BlogrollEntry
+                title={node.frontmatter.title || node.fields.slug}
+                slug={node.fields.slug}
+                date={node.frontmatter.date}
+                description={node.frontmatter.description}
+                excerpt={node.excerpt}
+                tags={node.frontmatter.tags}
+                key={node.fields.slug}
+              />
+            )
+          })}
+        </ul>
+      </div>
+    </Layout>
   )
 }
 
@@ -44,6 +45,7 @@ export const blogPostsByTagQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
