@@ -38,19 +38,16 @@ function Sidebar() {
                 marginBottom: 0,
                 marginLeft: `auto`,
                 marginRight: `auto`,
-                minWidth: 50,
-                borderRadius: `100%`,
-                display: `block`
-              }}
-              imgStyle={{
                 borderRadius: `50%`,
+                border: `1px #555 solid`,
+                display: `block`
               }}
             />
 
             {
               // Blurb
             }
-            <div id="sidebar-bio" align="center">
+            <div id="sidebar-bio" align="center" hidden="true">
               My name is <br />
               <strong id="sidebar-bio-name">{author}</strong><br />
               and this is my blog.
