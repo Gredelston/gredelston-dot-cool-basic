@@ -24,9 +24,11 @@ function Sidebar() {
             {
               // Site title
             }
-            <Link to="/">
-              <h1 id="sidebar-title">{title}</h1>
-            </Link>
+            <div id="sidebar-title-container">
+              <Link to="/">
+                <h1 id="sidebar-title">{title}</h1>
+              </Link>
+            </div>
 
             {
               // Profile pic
@@ -75,6 +77,7 @@ function Sidebar() {
                 )
               }
             </ul>
+            <br /><br />
 
             {
               // Social links

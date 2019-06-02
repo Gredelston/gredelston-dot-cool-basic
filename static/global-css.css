@@ -62,7 +62,17 @@ p {
     font-size: small;
 }
 
-a {
-    text-decoration: none;
-    font-weight: bold;
+#sidebar-nav-links {
+    display: block;
+}
+
+.sidebar-nav-link-container {
+    float: right;
+    display: block;
+    border: 1px solid white;
+    border-right: none;
+    border-radius: 16px 0px 0px 16px;
+    margin-right: -60px;
+    margin-left: 0px;
+    padding: 16px 180px 16px 30px;
 }
