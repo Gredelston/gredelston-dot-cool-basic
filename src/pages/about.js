@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class NotFoundPage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -12,18 +12,17 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="About Me" />
-        <h1>Greg Edelston, Whose Website You&rsquo;re Viewing</h1>
-        <p>The rumors are true. I&rsquo;m Greg, and this is my website.</p>
-        <p>Professionally, I write software at Google in Boulder, Colorado. I use GTD to keep my life organized.</p>
-        <p>Hobbially, my more invested hobbies include improv comedy and studying Zen Buddhism.</p>
-        <p>Other hobbies include making music, writing puzzles, playing board games, and trying to stay moderately fit.</p>
-        <p>Someday I&rsquo;ll put my resume here.</p>
+        <h1>About Me</h1>
+        <p>I&rsquo;m Greg Edelston. Hence the portmanteau. This is my blog.</p>
+        <p>Writing software is fun for me. It's collaborative puzzle-solving with the power to address real problems&mdash;what&rsquo;s not to like? These days I work at Google on the <a href="https://chromium.googlesource.com/chromiumos/platform/tast/">integration testing framework for ChromeOS</a>.</p>
+        <p>Other activities I enjoy include improv comedy, Zen Buddhism, making music, solving puzzles, and trying to stay reasonably fit.</p>
+        <p>I live in Boulder, CO, but a sizeable chunk of my heart remains in New England.</p>
       </Layout>
     )
   }
 }
 
-export default NotFoundPage
+export default AboutPage
 
 export const pageQuery = graphql`
   query {
