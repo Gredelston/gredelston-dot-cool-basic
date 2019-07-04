@@ -1,5 +1,5 @@
 html {
-    background: #E7E5DE;
+    background: white;
     color: black;
 }
 
@@ -25,7 +25,7 @@ a:hover {
 
 .sidebar-nav-link-container {
     border: white;
-    background: #E7E5DE;
+    background: white;
 }
 
 .sidebar-nav-link-container a {
