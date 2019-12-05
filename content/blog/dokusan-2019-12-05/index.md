@@ -2,7 +2,7 @@
 title: Dokusan 2019-12-05
 date: 2019-12-05
 description: "A summary of a discussion"
-tags: ["zen", "dokusan"]
+tags: ["zen", "dokusan", "hidden"]
 ---
 _Context: As part of my Zen practice, I periodically have one-on-one discussions with my teacher. These discusisons are called "dokusan." I'm playing with jotting down notes of those discussions. Maybe someday soon I'll write an introductory post on the topic, with more context about what dokusan is. But not today._
 
