@@ -44,7 +44,7 @@ Brains are skilled pattern-recognizers. I didn't seek mnemonics; my brain discov
 
 In order to track my progress, I took [the relevant Sporcle quiz](www.sporcle.com/games/boknowsmovies/best_pictures) every day.
 
-**February 19:** 13/92. (A half-assed attempt.)
+**February 19:** 13/92 (A half-assed attempt.)
 
 **February 20:** 37/92 
 
