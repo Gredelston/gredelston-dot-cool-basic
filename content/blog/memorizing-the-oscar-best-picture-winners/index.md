@@ -10,6 +10,8 @@ This week I learned all the winners of the Academy Award for Best Picture, by ye
 
 I wrote a flashcard-style quizzing tool to help me learn, which I named `quizme`. It's available on Github [here](https://github.com/Gredelston/quizme).
 
+The basic structure is: The tool prompts you with a year (say, 1964). You respond with the title of the film that won the award in that year (_My Fair Lady_). The tool checks whether you were right. Repeat.
+
 `quizme` has a few useful features. You can filter the data by decade(s). You can attempt a "challenge," where you will be asked each prompt exactly once, in either random order or chronological order. The tool reports on your score as a running total. You can specify alternate acceptable forms of answers, such as "Birdman" for *Birdman or (The Unexpected Virtue of Ignorance)*, although I preferred to reinforce the full form of each title.
 
 It works a treat. In fact, I found it to be more effective than repeated Sporcle quizzing. The decade-filtering allowed me to learn in nice, discrete chunks. The randomly arising repetition—say, being prompted for 1962 three times in a row—turned out to be a great way to get a foothold. 10/10, would use again.
