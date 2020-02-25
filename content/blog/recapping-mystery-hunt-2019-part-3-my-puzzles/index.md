@@ -34,7 +34,7 @@ Without further ado, here are my puzzles! Blurbs are spoiler-free. Links to the 
 
 [**7 Little Dropquotes**](http://web.mit.edu/puzzle/www/2019/puzzle/7_little_dropquotes.html): This is Jesse Gelles’ puzzle, and John McLaren deserves to be recognized for his substantial work on the gorgeous and printer-friendly web layout. My contribution was writing a program which can combine a list of n-grams into words, à la [7 Little Words](http://www.7littlewords.com/). Hit me up if, for some reason, you want a script that will let you cheat at that game.
 
-##Puzzles of mine which didn’t make the final cut
+##Puzzles I wrote or co-write which didn’t make the final cut
 
 [**Anima Oratorio**](http://web.mit.edu/puzzle/www/2019/solution/anima_oratorio.html) was the ludicrous Jesse Gelles’ brain-child, and may be the nerdiest thing I’ve ever attached my name to. It was a “flex puzzle”: if any Hunt puzzle was broken and had to be removed, this puzzle would be swapped in. Luckily, we had more flex puzzles than we needed.
 
