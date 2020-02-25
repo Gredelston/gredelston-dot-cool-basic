@@ -6,7 +6,7 @@ tags: ["puzzles"]
 ---
 This week I learned all the winners of the Academy Award for Best Picture, by year. It took me 5 days. Here's how I did it.
 
-## My tool: quizme
+## My tool: `quizme`
 
 I wrote a flashcard-style quizzing tool to help me learn, which I named `quizme`. It's available on Github [here](https://github.com/Gredelston/quizme).
 
